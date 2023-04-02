@@ -1,0 +1,180 @@
+/*Configurações gerais*/
+:root {
+    --black-color-: #100102;
+    --brown-color-: #4B1E19;
+    --pink-color-: #C0587E;
+    --orange-color-100 : #EA592A;
+    --orange-color-50 : #FC8B5E;
+
+    --white: #f5f5f5;
+}
+html{
+    font-size: 62.5%;
+    }
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+/*Configurações de texto*/
+.section-title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5.0rem;
+}
+.text-colored{
+    color: var(--white)
+}
+.text-colored-brown{
+    color: var(--brown-color-);
+}
+.text-colored-orange{
+    color: var(--orange-color-100);
+}
+
+/*Header*/
+.navbar{
+    background-color: var(--brown-color-);
+}
+#cabecalho .nav .nav-link.active{
+    background-color: var(--orange-color-100);
+    color: var(--white);
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: var(--white);
+}
+.navbar-toggler{
+    background-color: var(--white);
+}
+.nav-cardapio .nav-link.active,
+#contato button{
+    background-color: var(--brown-color-);
+    color: var(--white);
+}
+.nav-cardapio .nav-link{
+    color: var(--brown-color-);
+}
+/*Seção sobre & Problemas comuns*/
+
+.carousel-item {
+    height: 80vh;
+}
+#sobreCachos h3{
+    margin-top: 9rem;
+}
+#sobreCachos p{
+    line-height: 3rem;
+}
+#sobre,#problemas-comuns{
+    background-color: var(--orange-color-100);
+}
+.tab-content h5{
+    font-size: 2rem;
+}
+.tab-pane h5{
+    font-size: 3.2rem;
+    margin: 3.5rem 0;
+}
+.tab-pane img{
+    margin-bottom: 2rem;
+}
+/*Seção Contato*/
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+.social-links li + li{
+    margin-left: 1em;
+}
+.social-links li a{
+    text-decoration: none;
+}
+.contatos{
+    padding-left: 8rem;
+}
+textarea{
+    resize: none;
+}
+#form label{
+    font-size: 2.4rem;
+}
+#form input{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+#form textarea#mensagem{
+    height: 12rem;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+#form button{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+}
+#form button:hover{
+    transform: scale(1.05);
+}
+#endereco h3{
+    margin-top: 11rem;
+}
+
+/*Media queries*/
+@media (max-width:767px){
+    .carousel-item{
+        height: 0%;
+    }
+    .contatos{
+        padding-left: 1rem;
+    }
+    #tipos p{
+        margin-bottom: 4rem;
+    }
+    .tab-content{
+        margin-top: 5rem;
+    }
+    .tab-pane p{
+        margin-bottom: 4rem;
+    }
+    #contato h2{
+        margin-bottom: 2rem;
+    }
+    #redesSociais{
+        margin: 2rem 0;
+    }
+    .fs-1 i{
+        font-size: 4.3rem;
+    }
+    #endereco h3{
+        margin-top:2rem;
+    }
+    #endereco p{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .carousel-item{
+        height: 0%;
+    }
+    #sobreFoto{
+        width: 50rem;
+        margin: auto auto;
+    }
+    #sobreCachos{
+        width: 100%;
+    }
+    #sobreCachos h2{
+        margin: 3rem 0;
+    }
+    #redesSociais i{
+        display: block;
+    }
+    #tiposCabelos i{
+        display: block;
+    }
+    #endereco h3{
+        margin-top:4rem;
+    }
+}
